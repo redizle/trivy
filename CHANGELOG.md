@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.71.0](https://github.com/aquasecurity/trivy/compare/v0.70.0...v0.71.0) (2026-05-18)
+
+
+### Features
+
+* **seal:** add vendor support for language file detection. ([#10297](https://github.com/aquasecurity/trivy/issues/10297)) ([b08bf6a](https://github.com/aquasecurity/trivy/commit/b08bf6a0a59785ff72900a4a6873f25a9d7b2921))
+* **secret:** add a way to customize skipped folders, files and exts ([#10550](https://github.com/aquasecurity/trivy/issues/10550)) ([e4325b1](https://github.com/aquasecurity/trivy/commit/e4325b18246dc90d2d18bf7e032fe47db89108e5))
+* **secret:** add Azure secret detection rules ([#10562](https://github.com/aquasecurity/trivy/issues/10562)) ([69dcd18](https://github.com/aquasecurity/trivy/commit/69dcd18eff5c810948738644d9a2df79a470f0e0))
+
+
+### Bug Fixes
+
+* **misconf:** make identifiers in ignore rules case-insensitive ([#10375](https://github.com/aquasecurity/trivy/issues/10375)) ([a75a468](https://github.com/aquasecurity/trivy/commit/a75a468facbff12c81da00742709c88c0a4ad29d))
+* **misconf:** prevent path traversal in Terraform filesystem functions ([#10664](https://github.com/aquasecurity/trivy/issues/10664)) ([9d91b88](https://github.com/aquasecurity/trivy/commit/9d91b888cf63023e9c09b64259a4c1cea8dfe993))
+* overwrite OS packages PURLs after overwrite OS ([#10298](https://github.com/aquasecurity/trivy/issues/10298)) ([39a28ed](https://github.com/aquasecurity/trivy/commit/39a28edd7f70f63dd4b48dc6838a16c42d36c8dc))
+* pull instead of clone when test repo already exists ([#10636](https://github.com/aquasecurity/trivy/issues/10636)) ([3a2f7fb](https://github.com/aquasecurity/trivy/commit/3a2f7fb2636189a1f703a509125ee34d5c0b9eaa))
+
 ## [0.70.0](https://github.com/aquasecurity/trivy/compare/v0.69.0...v0.70.0) (2026-04-16)
 
 
