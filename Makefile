@@ -76,6 +76,11 @@ clean:
 	@rm -rf $(OUTPUT_DIR)
 	@rm -f $(COVERAGE_FILE) coverage.html
 
+# open coverage report in browser after generating it (macOS)
+## view-coverage: Open coverage report in browser
+view-coverage: test-coverage
+	open coverage.html
+
 ## help: Show this help message
 help:
 	@echo "Usage: make [target]"
