@@ -2,6 +2,7 @@ module github.com/aquasecurity/trivy
 
 go 1.21
 
+// Personal fork - learning project, tracking upstream aquasecurity/trivy
 require (
 	github.com/aquasecurity/trivy-db v0.0.0-20231101000000-000000000000
 	github.com/aquasecurity/trivy-policies v0.0.0-20231101000000-000000000000
