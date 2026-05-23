@@ -48,6 +48,8 @@ test-coverage:
 	$(GO) test $(GOTESTFLAGS) -coverprofile=$(COVERAGE_FILE) -covermode=atomic ./...
 	$(GO) tool cover -html=$(COVERAGE_FILE) -o coverage.html
 	@echo "Coverage report generated: coverage.html"
+	# print a quick summary to stdout as well so I don't have to open the browser every time
+	@$(GO) tool cover -func=$(COVERAGE_FILE) | tail -1
 
 ## lint: Run golangci-lint
 lint:
