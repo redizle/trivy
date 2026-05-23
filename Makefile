@@ -54,7 +54,8 @@ test-coverage:
 ## lint: Run golangci-lint
 lint:
 	@which golangci-lint > /dev/null 2>&1 || (echo "golangci-lint not found, install from https://golangci-lint.run" && exit 1)
-	golangci-lint run ./...
+	# using --timeout because lint tends to time out on my machine with the default 1m
+	golangci-lint run --timeout=3m ./...
 
 ## fmt: Format Go source files
 fmt:
