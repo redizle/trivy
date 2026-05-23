@@ -93,6 +93,11 @@ view-coverage: test-coverage
 # I kept forgetting to run all three separately before committing
 check: fmt vet lint
 
+## test-short: Run tests skipping long-running integration tests (useful for quick feedback)
+# added this because ./... takes forever when I just want to sanity check a small change
+test-short:
+	$(GO) test $(GOTESTFLAGS) -short ./...
+
 ## help: Show this help message
 help:
 	@echo "Usage: make [target]"
