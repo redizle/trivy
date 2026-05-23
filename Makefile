@@ -89,6 +89,10 @@ view-coverage: test-coverage
 		open coverage.html; \
 	fi
 
+## check: Run fmt, vet, and lint in one shot (handy before pushing)
+# I kept forgetting to run all three separately before committing
+check: fmt vet lint
+
 ## help: Show this help message
 help:
 	@echo "Usage: make [target]"
