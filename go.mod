@@ -3,6 +3,7 @@ module github.com/aquasecurity/trivy
 go 1.21
 
 // Personal fork - learning project, tracking upstream aquasecurity/trivy
+// Note: bumped golang.org/x/sys and golang.org/x/text to latest patch versions
 require (
 	github.com/aquasecurity/trivy-db v0.0.0-20231101000000-000000000000
 	github.com/aquasecurity/trivy-policies v0.0.0-20231101000000-000000000000
@@ -38,8 +39,8 @@ require (
 	github.com/subosito/gotenv v1.6.0 // indirect
 	go.uber.org/atomic v1.11.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
-	golang.org/x/sys v0.13.0 // indirect
-	golang.org/x/text v0.13.0 // indirect
+	golang.org/x/sys v0.14.0 // indirect
+	golang.org/x/text v0.14.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
