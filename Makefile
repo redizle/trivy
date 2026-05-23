@@ -76,10 +76,15 @@ clean:
 	@rm -rf $(OUTPUT_DIR)
 	@rm -f $(COVERAGE_FILE) coverage.html
 
-# open coverage report in browser after generating it (macOS)
+# open coverage report in browser after generating it
+# using xdg-open so this works on Linux too, not just macOS
 ## view-coverage: Open coverage report in browser
 view-coverage: test-coverage
-	open coverage.html
+	@if command -v xdg-open > /dev/null 2>&1; then \
+		xdg-open coverage.html; \
+	else \
+		open coverage.html; \
+	fi
 
 ## help: Show this help message
 help:
